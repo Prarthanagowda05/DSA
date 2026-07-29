@@ -13,9 +13,7 @@ class Solution {
                }
                left++; 
             }
-            if(countZeroes<=1){
-                max=Math.max(max,right-left);
-            }
+            max=Math.max(max,right-left);
         }
         return max==0 ? 0: max;
     }
