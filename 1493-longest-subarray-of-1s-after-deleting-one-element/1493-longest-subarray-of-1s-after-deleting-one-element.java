@@ -13,11 +13,8 @@ class Solution {
                }
                left++; 
             }
-            if(countZeroes==1){
+            if(countZeroes<=1){
                 max=Math.max(max,right-left);
-            }
-            if(countZeroes==0){
-                 max=Math.max(max,right-left);
             }
         }
         return max==0 ? 0: max;
